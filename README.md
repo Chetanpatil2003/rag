@@ -77,6 +77,19 @@ export AZURE_OPENAI_EMBEDDING_DEPLOYMENT=""
 python main.py
 ```
 
+Or 
+
+
+2.  Run with Docker Dekstop (Optional):
+```bash
+docker build -t rag-app .
+```
+```bash
+docker run -d -p 8001:8000 --name my-rag-container rag-app
+
+```
+
+
 2. Initialize the vectorstores (one-time setup):
 ```bash
 curl -X POST "http://localhost:8001/embed"
