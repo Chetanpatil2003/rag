@@ -14,9 +14,9 @@ A Retrieval-Augmented Generation (RAG) system for answering questions about BYD 
 ## Architecture
 
 ```
+├── main.py                      # FastAPI application entry point
 src/
 ├── config.py                    # Configuration management
-├── main.py                      # FastAPI application entry point
 ├── models/
 │   ├── api_models.py            # Pydantic models for API
 │   └── graph_state.py           # LangGraph state definitions
@@ -80,7 +80,7 @@ python main.py
 Or 
 
 
-2.  Run with Docker Dekstop (Optional):
+1.  Run with Docker Dekstop (Note - only setup .env(step 3 in installation): 
 ```bash
 docker build -t rag-app .
 ```
